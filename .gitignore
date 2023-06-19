@@ -4,3 +4,5 @@
 /config.php
 /phpinfo.php
 /.vscode
+php.ini
+xdebug.ini
