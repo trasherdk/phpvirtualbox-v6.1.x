@@ -148,7 +148,7 @@ abstract class VBox_Collection implements ArrayAccess, Iterator, Countable
         reset($this->_objects);
     }
 
-    public function current(): mixed
+    public function current() //: mixed
     {
         return current($this->_objects);
     }

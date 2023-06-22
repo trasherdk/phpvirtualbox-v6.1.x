@@ -44,6 +44,12 @@ class phpvbAuthBuiltin implements phpvbAuth {
 		$vbox->connect();
 		$p = $vbox->vbox->getExtraData('phpvb/users/'.$username.'/pass');
 
+		/*
+		* Check different passwords
+		*/
+		$admin = hash('sha512', 'admin');
+		$pass = hash('sha512', 'pass');
+
 		// Check for initial login
 		if($username == 'admin' && !$p && !$vbox->vbox->getExtraData('phpvb/usersSetup')) {
 			$vbox->vbox->setExtraData('phpvb/usersSetup','1');

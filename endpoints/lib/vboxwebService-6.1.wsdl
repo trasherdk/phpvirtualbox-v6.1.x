@@ -8,7 +8,7 @@
   <import location="vboxweb-6.1.wsdl" namespace="http://www.virtualbox.org/"/>
   <service name="vboxService">
     <port binding="vbox:vboxBinding" name="vboxServicePort">
-      <soap:address location="http://localhost:18083/"/>
+      <soap:address location="http://localhost:17083/"/>
     </port>
   </service>
 </definitions>
