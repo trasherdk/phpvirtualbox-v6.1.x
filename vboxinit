@@ -29,7 +29,7 @@ fi
 
 # Check for VirtualBox binary path
 if [ "$VBOX_BIN_PATH" != "" ]; then
-   PATH = "$PATH:$VBOX_BIN_PATH";
+   PATH="$PATH:$VBOX_BIN_PATH";
 fi
 
 start()
